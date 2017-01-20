@@ -1,0 +1,1 @@
+Invoke-WebRequest $ContainerIP:$Port | select -ExpandProperty headers
