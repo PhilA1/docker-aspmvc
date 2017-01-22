@@ -1,2 +1,2 @@
-new-LocalUser -Name $ContainerAdmin -Password  (ConvertTo-SecureString  $ContainerPassword -AsPlainText -Force)
-Add-LocalGroupMember -Group Administrators -Member $ContainerAdmin
+new-LocalUser -Name RemoteIISUser -Password  (ConvertTo-SecureString D0cker12 -AsPlainText -Force)
+Add-LocalGroupMember -Group Administrators -Member RemoteIISUser
