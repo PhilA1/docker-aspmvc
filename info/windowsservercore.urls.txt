@@ -1,0 +1,58 @@
+PS C:\www\connect4> docker exec phila.windows powershell -command "netsh http show urlacl" 
+
+URL Reservations: 
+----------------- 
+
+    Reserved URL            : http://*:5357/ 
+        User: BUILTIN\Users
+            Listen: Yes
+            Delegate: No
+        User: NT AUTHORITY\LOCAL SERVICE
+            Listen: Yes
+            Delegate: No
+            SDDL: D:(A;;GX;;;BU)(A;;GX;;;LS) 
+
+    Reserved URL            : http://+:80/Temporary_Listen_Addresses/ 
+        User: \Everyone
+            Listen: Yes
+            Delegate: No
+            SDDL: D:(A;;GX;;;WD) 
+
+    Reserved URL            : https://*:5358/ 
+        User: BUILTIN\Users
+            Listen: Yes
+            Delegate: No
+        User: NT AUTHORITY\LOCAL SERVICE
+            Listen: Yes
+            Delegate: No
+            SDDL: D:(A;;GX;;;BU)(A;;GX;;;LS) 
+
+    Reserved URL            : https://+:443/sra_{BA195980-CD49-458b-9E23-C84EE0ADCD75}/ 
+        User: NT SERVICE\SstpSvc
+            Listen: Yes
+            Delegate: Yes
+        User: BUILTIN\Administrators
+            Listen: Yes
+            Delegate: Yes
+        User: NT AUTHORITY\SYSTEM
+            Listen: Yes
+            Delegate: Yes
+            SDDL: D:(A;;GA;;;S-1-5-80-3435701886-799518250-3791383489-3228296122-2938884314)(A;;GA;;;BA)(A;;GA;;;SY) 
+
+    Reserved URL            : https://+:5986/wsman/ 
+        User: NT SERVICE\WinRM
+            Listen: Yes
+            Delegate: No
+            SDDL: D:(A;;GX;;;S-1-5-80-569256582-2953403351-2909559716-1301513147-412116970) 
+
+    Reserved URL            : http://+:47001/wsman/ 
+        User: NT SERVICE\WinRM
+            Listen: Yes
+            Delegate: No
+            SDDL: D:(A;;GX;;;S-1-5-80-569256582-2953403351-2909559716-1301513147-412116970) 
+
+    Reserved URL            : http://+:5985/wsman/ 
+        User: NT SERVICE\WinRM
+            Listen: Yes
+            Delegate: No
+            SDDL: D:(A;;GX;;;S-1-5-80-569256582-2953403351-2909559716-1301513147-412116970) 
